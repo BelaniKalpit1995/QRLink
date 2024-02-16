@@ -11,15 +11,15 @@
 
 <body>
     <section class="page-wrapper">
-        <div class="admin-header d-flex align-items-center justify-content-between">
+        <div class="admin-header d-flex align-items-center justify-content-between position-sticky">
             <a href="/" class="logo d-block text-center mb-0">
                 <h4 class="m-0">QRLink</h4>
             </a>
             <div class="d-flex align-items-center">
-                <h4 class="primary-text my-0">kavita.patek@weservecodes.com</h4>
+                <h4 class="primary-text my-0">kalpit.belani@weservecodes.com</h4>
                 <div class="dropdown dd-transparent">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="" alt="Profile-image">
+                    <button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/Profile.png" alt="Profile-image">
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Dashboard</a></li>
@@ -28,8 +28,49 @@
                 </div>
             </div>
         </div>
-        <div class="container"> 
-        </div>
+        <div class="body-wrapper light-gray-bg">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h4 class="page-title mb-2">Setup your page</h4>
+                    <h6 class="page-sub-title mb-0">Let’s setup bio.link/pkavita 🎉</h6>
+                </div>
+                <div class="login-wrapper mx-auto px-4">
+                    <div class="d-flex align-items-center flex-wrap">
+                        <div class="page-image position-relative d-flex align-items-center justify-content-center">
+                            <img src="assets/images/circle-close.svg" class="delete-image c-pointer" alt="Page Profile" />
+                            <input type="file" name="upload" class="c-pointer" id="upload" />
+                            <!-- <img src="assets/images/camera.svg" width="50" alt="Page Profile" /> -->
+                            <img src="assets/images/Profile.png" class="profile c-pointer" alt="Page Profile" />
+                        </div>
+                        <div class="ms-3 bio-detail">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="label-text text-uppercase">Your name</label>
+                                    <input type="text" placeholder="Your name" class="form-control" id="name" aria-describedby="emailHelp"> 
+                                </div>
+                                <div class="mb-0">
+                                    <label for="password" class="label-text text-uppercase">Bio</label>
+                                    <input type="text" placeholder="Bio" class="form-control" id="bio" name="password">
+                                </div>                    
+                            </form>
+                        </div>
+                    </div>
+                    <div class="link-create mt-3">
+                        <h6 class="page-sub-title mb-2">Add your first link</h6>
+                        <div class="step-box">
+                            <input type="text" name="link-name" id="link_name" placeholder="Link name(My Instagram)" />
+                            <div class="top-divider my-1"></div>
+                            <input type="text" name="link-url" id="link_url" placeholder="URL (https://instagram.com/yourname)" />
+                        </div>
+                    </div>  
+                    <button class="btn-transparent d-flex align-items-center mt-3" name="add-new-link" id="add_new-link"><img src="assets/images/add_blue.svg" width="14" class="me-2" alt="Add"/>Add another links</button>
+
+                    <div class="text-center">
+                        <button class="btn-blue mt-4 w-100 text-center" name="add-new-link" id="add_new-link">Get started</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </section>
     <script type="text/javascript" src="assets/js/plguin/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/plguin/popper.min.js"></script>

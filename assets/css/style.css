@@ -1,108 +1,200 @@
-body{
+body {
     font-size: 14px;
-    line-height: normal; 
+    line-height: normal;
     color: #121212;
     font-family: "Fredoka", sans-serif !important;
 }
-a,a:hover{
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ea5f61;
+}
+
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    border-left: 1px solid rgba(10, 28, 47, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 8px;
+    height: 40px;
+    background-color: #d8d8d8;
+    border: 3px solid #fafafa;
+    border-radius: 20px !important;
+}
+
+a,
+a:hover {
     text-decoration: none !important;
 }
+
 .hero-banner {
-    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%,#06c3c6 0,#d700da 100%);
+    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%, #06c3c6 0, #d700da 100%);
     padding: 100px 10px;
 }
 
+input:focus,
+button:focus {
+    box-shadow: none !important;
+}
+
+.light-gray-bg {
+    background-color: #f9f9f9;
+}
+
+.c-pointer {
+    cursor: pointer !important;
+}
+
+.top-divider {
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+}
+
+input:focus-visible {
+    outline: none;
+}
 
 /* typography */
-.tiny-font{
+.tiny-font {
     font-size: 13px;
     font-weight: 400;
     line-height: 120%;
     color: #121212;
 }
-.tiny-font.highlight{
+
+.tiny-font.highlight {
     color: #076AE2;
     font-weight: 500;
 }
-.primary-text{
+
+.primary-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
     color: #121212;
 }
-.primary-text.highlight{
+
+.primary-text.highlight {
     color: #076AE2;
     font-weight: 500;
 }
-.label-text{
+
+.label-text {
     font-size: 12px;
     font-weight: 400;
     line-height: 120%;
     color: #121212;
     letter-spacing: 0.5px;
 }
-.label-text.highlight{
+
+.label-text.highlight {
+    color: #076AE2;
+    font-weight: 500;
+}
+
+.page-title {
+    font-size: 24px;
+    line-height: 130%;
+    color: #121212;
+    font-weight: 500;
+}
+
+.page-title.highlight {
+    color: #076AE2;
+    font-weight: 500;
+}
+
+.page-sub-title {
+    font-size: 16px;
+    line-height: 130%;
+    color: #121212;
+    font-weight: 400;
+}
+
+.page-sub-title.highlight {
     color: #076AE2;
     font-weight: 500;
 }
 
 /* typography */
-header{
+header {
     position: fixed;
     top: 10px;
     width: 100%;
 }
-.logo h4{
+
+.logo h4 {
     font-size: 24px;
     line-height: normal;
     color: #076AE2;
     font-weight: 500;
 }
-.header{
+
+.header {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 30px;
     width: 100%;
 }
-button{
+
+button {
     border-radius: 30px !important;
+    font-size: 14px !important;
+    line-height: 120% !important;
+    padding: 9px 20px !important;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: #076AE2;
-    border: 1px solid #076AE2; 
-    padding: 9px 20px;
-    color: #ffffff; 
+    border: 1px solid #076AE2;
+    color: #ffffff;
 }
-.btn-blue-border{
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: #076AE2;
+    padding: 0px !important;
+}
+
+.btn-blue-border {
     border: 1px solid #076AE2;
     color: #076AE2;
-    padding: 9px 20px; 
     background-color: transparent;
 }
-.hero-title{
+
+.hero-title {
     font-size: 50px;
     font-weight: 500;
 }
 
 
 /* Login css */
-.auth-bg{
-    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%,#06c3c6 0,#d700da 100%);
+.auth-bg {
+    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%, #06c3c6 0, #d700da 100%);
     padding: 30px 10px;
     width: 100%;
     height: 100vh;
 }
-.login-wrapper{
+
+.login-wrapper {
     background-color: #ffffff;
     padding: 40px;
-    box-shadow: 0 0 0 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
     max-width: 550px;
     border-radius: 8px;
 }
-.login-wrapper .btn-blue{
+
+.login-wrapper .btn-blue {
     min-width: 222px;
 }
-.login-wrapper input{
+
+.login-wrapper input {
     border: 1px solid #d9d9d9;
     height: 50px;
     padding: 5px 15px;
@@ -110,23 +202,28 @@ button{
     font-size: 14px;
     border-radius: 4px;
 }
-.float-value{
+
+.float-value {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-.float-value.left{
+
+.float-value.left {
     left: 15px;
 }
-.float-value.right{
+
+.float-value.right {
     right: 15px;
 }
-.create-link{
+
+.create-link {
     border: 1px solid #d9d9d9;
     height: 50px;
     border-radius: 4px;
 }
-.create-link input{
+
+.create-link input {
     border: none;
     height: 100%;
     padding: 5px 15px 5px 62px;
@@ -134,13 +231,107 @@ button{
 
 
 /* Admin css */
-.admin-header{
-    padding: 9px 16px;
+.admin-header {
+    padding: 9px 30px;
     background-color: #ffffff;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #d9d9d9;
 }
-.dd-transparent button{
+
+.dd-transparent button {
     background-color: transparent;
     border: none;
+}
+
+.dd-transparent button img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    padding: 6px 0px !important;
+}
+
+.dropdown-menu a {
+    font-size: 14px !important;
+    line-height: 120% !important;
+    color: #121212 !important;
+    font-weight: 400;
+    padding: 6px 15px 6px;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    background-image: url('../images/down-arrow.svg');
+    width: 14px;
+    height: 12px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.body-wrapper {
+    min-height: calc(100vh - 71px);
+    overflow-y: auto;
+    padding: 30px 15px 20px;
+}
+.body-wrapper .btn-blue{
+    padding: 14px 20px !important;
+}
+
+.page-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px dashed #076AE2;
+    flex: 0 0 160px;
+}
+
+.page-image img.profile {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+}
+
+.page-image input {
+    border: none;
+    width: 100% !important;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    opacity: 0;
+}
+
+.bio-detail {
+    width: calc(100% - 180px);
+}
+
+.step-box {
+    border: 1px solid #d9d9d9;
+    padding: 5px 10px;
+}
+
+.step-box input {
+    border: none;
+    height: 30px;
+    padding: 5px 0px;
+    width: 100%;
+}
+.delete-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 99;
 }
