@@ -1,0 +1,48 @@
+@media (max-width: 991px){
+    .gallery a{ 
+        width: 50% !important; 
+    } 
+    .menus a {
+        margin: 0 !important;
+        padding: 9px 16px;
+        display: block;
+        border-bottom: 1px solid;
+        width: 100%;
+        color: #fff !important;
+    }
+    .menus a.active{
+        color: #FFB100 !important;
+    }
+    .menus li {
+        width: 100%;
+    }
+    .hero_banner.home{
+        height: auto;
+        padding: 60px 10px;
+    }
+    .carousel-inner::before, .carousel-inner::after{
+        display: none;
+    }
+    .footer { 
+        padding: 101px 15px 40px;
+    }
+}
+
+@media (max-width: 767px){
+    .gallery a{ 
+        width: 100% !important; 
+    }
+    .gallery a img{ 
+        height: 300px !important; 
+    }
+    .first-loading {
+        max-width: 218px;
+        height: 218px;
+    }
+    .hero-title{
+        font-size: 32px;
+    }
+    .contact-detail h2,.carousel-text h4{
+        font-size: 24px;
+    }
+}

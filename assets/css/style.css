@@ -1,0 +1,146 @@
+body{
+    font-size: 14px;
+    line-height: normal; 
+    color: #121212;
+    font-family: "Fredoka", sans-serif !important;
+}
+a,a:hover{
+    text-decoration: none !important;
+}
+.hero-banner {
+    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%,#06c3c6 0,#d700da 100%);
+    padding: 100px 10px;
+}
+
+
+/* typography */
+.tiny-font{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #121212;
+}
+.tiny-font.highlight{
+    color: #076AE2;
+    font-weight: 500;
+}
+.primary-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #121212;
+}
+.primary-text.highlight{
+    color: #076AE2;
+    font-weight: 500;
+}
+.label-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #121212;
+    letter-spacing: 0.5px;
+}
+.label-text.highlight{
+    color: #076AE2;
+    font-weight: 500;
+}
+
+/* typography */
+header{
+    position: fixed;
+    top: 10px;
+    width: 100%;
+}
+.logo h4{
+    font-size: 24px;
+    line-height: normal;
+    color: #076AE2;
+    font-weight: 500;
+}
+.header{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+}
+button{
+    border-radius: 30px !important;
+}
+.btn-blue{
+    background-color: #076AE2;
+    border: 1px solid #076AE2; 
+    padding: 9px 20px;
+    color: #ffffff; 
+}
+.btn-blue-border{
+    border: 1px solid #076AE2;
+    color: #076AE2;
+    padding: 9px 20px; 
+    background-color: transparent;
+}
+.hero-title{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+/* Login css */
+.auth-bg{
+    background: radial-gradient(76.46% 120.95% at 24.45% 94.99%,#06c3c6 0,#d700da 100%);
+    padding: 30px 10px;
+    width: 100%;
+    height: 100vh;
+}
+.login-wrapper{
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.15);
+    max-width: 550px;
+    border-radius: 8px;
+}
+.login-wrapper .btn-blue{
+    min-width: 222px;
+}
+.login-wrapper input{
+    border: 1px solid #d9d9d9;
+    height: 50px;
+    padding: 5px 15px;
+    color: #121212;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.float-value{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.float-value.left{
+    left: 15px;
+}
+.float-value.right{
+    right: 15px;
+}
+.create-link{
+    border: 1px solid #d9d9d9;
+    height: 50px;
+    border-radius: 4px;
+}
+.create-link input{
+    border: none;
+    height: 100%;
+    padding: 5px 15px 5px 62px;
+}
+
+
+/* Admin css */
+.admin-header{
+    padding: 9px 16px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-bottom: 1px solid #d9d9d9;
+}
+.dd-transparent button{
+    background-color: transparent;
+    border: none;
+}
